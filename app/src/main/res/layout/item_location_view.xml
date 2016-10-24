@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/locationNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:backgroundTint="#DEDEDE"
+        android:layout_above="@+id/locationAddresTextView"
+        />
+
+    <TextView
+        android:id="@+id/locationAddresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location name"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:backgroundTint="#DEDEDE"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:text="4.1"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:backgroundTint="#DEDEDE"
+        android:layout_alignRight="@+id/imageView"
+        />
+
+</RelativeLayout>
